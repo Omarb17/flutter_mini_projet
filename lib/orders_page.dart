@@ -4,16 +4,8 @@ class OrdersPage extends StatelessWidget {
   const OrdersPage({super.key});
 
   final List<Map<String, String>> orders = const [
-    {
-      'id': 'Samsung A53',
-      'details': '3500 DH',
-      'status': 'assets/images/samsung_a53.jpg',
-    },
-    {
-      'id': 'T-Shirt',
-      'details': '150 DH',
-      'status': 'assets/images/tshirt.jpg',
-    },
+    {'id': 'Samsung A53', 'details': '3500 DH'},
+    {'id': 'T-Shirt', 'details': '150 DH'},
   ];
 
   @override
@@ -37,7 +29,6 @@ class OrdersPage extends StatelessWidget {
                     leading: const Icon(Icons.shopping_bag),
                     title: Text(order['id']!),
                     subtitle: Text(order['details']!),
-                    // no trailing since no status
                   ),
                 );
               },
